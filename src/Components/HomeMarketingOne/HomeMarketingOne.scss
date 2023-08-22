@@ -1,0 +1,185 @@
+@import '../../Components/variables.scss';
+
+.marketing-one{
+    background-color: $section-bg;
+    padding-top: 13rem;
+    background-image: url('../../Assets/Images/hero-bg-2.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__title{
+        color: $color-white;
+        text-align: center;
+        .title{
+            font-size: $h2-title;  
+            font-family: MadeMirage;
+            div{
+                height: 9rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    .marketing-one__card__wrapper{
+        padding-top: 7rem;
+        padding-bottom: 13rem;
+        .col-12{
+            .one{
+                margin-right: auto;
+            }
+
+            .two{
+                margin-top: 5.56rem;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .three{
+                margin-top: 11.2rem;
+                margin-left: auto;
+            }
+        }
+        .marketing-one__card{
+                width: 85%;
+                
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .marketing-one{
+        padding-top: 25rem;
+    }
+    .marketing-one__title .title {
+        font-size: 18rem
+    }
+
+    .marketing-one .marketing-one__card__wrapper .marketing-one__card{
+        width: 100%;
+    }
+
+    .wtc{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .wtc__image{
+        height: 50%;
+        border-radius: 0;
+
+        &::before{
+            display: none;
+        }
+    }
+
+    .wtc__wrapper{
+        padding-top: 15rem;
+    }
+
+    .wtc__image img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .wtc__arch{
+        display: none;
+    }
+
+    .wtc__caption{
+        max-width: 100%;
+    }
+
+    .wtc__title h3{
+        font-size: 12rem;
+    }
+
+    .wtc__caption p{
+        font-size: 7.6rem;
+    }
+
+    .wtc__arrow img{
+        width: auto;
+    }
+
+    .marketing-one .marketing-one__card__wrapper{
+        padding-bottom: 25rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .marketing-one{
+        padding-top: 15rem;
+    }
+    .marketing-one__title .title {
+        font-size: 14rem
+    }
+
+    .marketing-one .marketing-one__card__wrapper{
+        padding-top: 0px;
+    }
+
+    .marketing-one .marketing-one__card__wrapper .marketing-one__card{
+        width: 100%;
+    }
+
+    .wtc{
+        width: 85%;
+        max-width: 85%;
+        overflow: hidden;
+    }
+
+    .wtc__image{
+        height: 50%;
+        border-radius: 0;
+
+        &::before{
+            display: none;
+        }
+    }
+
+    .wtc__wrapper{
+        padding-top: 5rem;
+    }
+
+    .wtc__image img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .wtc__arch{
+        display: none;
+    }
+
+    .wtc__title h3{
+        font-size: 6.5rem;
+    }
+    .wtc__caption{
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+    .wtc__caption p{
+        font-size: 4rem;
+    }
+
+    .wtc__arrow img{
+        width: auto;
+    }
+
+    .wtc__border{
+        width: 100%;
+    }
+
+    .marketing-one .marketing-one__card__wrapper{
+        padding-bottom: 15rem;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1599px){
+    
+}

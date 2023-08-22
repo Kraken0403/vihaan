@@ -1,0 +1,76 @@
+@import '../variables.scss';
+
+.inner-hero{
+    padding: 13rem 0 6rem 0;
+
+    &__caption{
+        text-align: center;
+        margin-bottom: 2rem;
+        p{
+            font-size: $p-size1;
+            color: black;
+        }
+    }
+
+    &__caption-two{
+        text-align: center;
+        p{
+            font-size: $p-size3;
+            color: $accent;
+        }
+    }
+
+    &__title{
+        margin-bottom: 4rem;
+        text-align: center;
+        h1{
+            font-family: MadeMirage;
+            font-size: $hmain-title;
+            color: black;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .inner-hero {
+        margin-top: 60px;
+    }
+
+    .inner-hero__caption p{
+        font-size: 5.5rem;
+    }
+
+    .inner-hero__title h1{
+        font-size: 25rem;
+    }
+
+    .inner-hero__caption-two p{
+        font-size: 6rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .inner-hero {
+        margin-top: 60px;
+    }
+
+    .inner-hero__caption p{
+        font-size: 4rem;
+    }
+
+    .inner-hero__title h1{
+        font-size: 18rem;
+    }
+
+    .inner-hero__caption-two p{
+        font-size: 5.5rem;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1599px){
+    
+}

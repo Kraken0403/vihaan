@@ -1,0 +1,65 @@
+@import '../variables.scss';
+
+.question{
+    background-color: $accent;
+    width: 100%;
+    padding: 13rem 0;
+
+    h2{
+        color: $color-white;
+        font-size: $h2-title;
+        font-family: MadeMirage;
+        text-align: center;
+    }
+
+    &__main{
+        width: 100%;
+        border-bottom: 1px solid $color-white;
+        margin-top: 7rem;
+        padding-bottom: 15px;
+        h3{
+            font-size: $h3-title;
+            font-family: MadeMirage;
+            color: white;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .question h2{
+        font-size: 14rem;
+        // padding: 25rem 0 0 0;
+    }
+
+    .question__main{
+        margin-top: 16rem;
+    }
+
+    .question__main h3{
+        font-size: 6rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .question h2{
+        font-size: 14rem;
+        // padding: 25rem 0 0 0;
+    }
+
+    .question__main{
+        margin-top: 16rem;
+    }
+
+    .question__main h3{
+        font-size: 6rem;
+    }
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1599px){
+    
+}

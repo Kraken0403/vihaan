@@ -1,0 +1,110 @@
+@import '../variables.scss';
+
+.od{
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    padding: 13rem 0;
+    
+    .react-multi-carousel-list{
+        overflow: unset!important;
+        // margin-left: 30%;
+    }
+    &__title{
+        margin-bottom: 6rem;
+        h1{
+            font-size: $h2-title;
+            font-family: MadeMirage;
+            color: $color-black;
+        }
+    }
+}
+
+.container-swipe{
+    position: relative;
+}
+
+.carousel-button-group {
+    position: absolute;
+    display: flex;
+    top: -20%;
+    right: 10%;
+
+    button{
+        background-color: transparent;
+        border: 1px solid $accent;
+        border-radius: 50%;
+        box-shadow: none;
+        width: 7rem;
+        height: 7rem;
+
+        img{
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .prev{
+        margin-right: 1rem;
+    }
+
+    .disable {
+        button{
+            opacity: 0.5;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .od{
+        padding: 25rem 0;
+    }
+
+    .od__title{
+        margin-bottom: 16rem;
+    }
+    
+    .od__title h1{
+        font-size: 18rem;
+    }
+
+    .carousel-button-group button{
+        width: 14rem;
+        height: 14rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .od{
+        padding: 15rem 0;
+    }
+
+    .od__title{
+        margin-bottom: 15rem;
+    }
+    
+    .od__title h1{
+        font-size: 14rem;
+    }
+
+    .carousel-button-group button{
+        width: 14rem;
+        height: 14rem;
+    }
+
+    .carousel-button-group {
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1599px){
+    
+}

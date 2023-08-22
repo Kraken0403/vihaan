@@ -1,0 +1,52 @@
+.ipc {
+    .ipc-wrapper {
+        width: 90%;
+        margin: auto;
+        padding-bottom: 15rem;
+    }
+
+    .ipc-wrapper-content {
+        p{
+            font-size: 2.3rem;
+            text-align: justify;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .ipc {
+        .ipc-wrapper {
+            width: 100%;
+            margin: auto;
+        }
+    
+        .ipc-wrapper-content {
+            p{
+                font-size: 6rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .ipc {
+        .ipc-wrapper {
+            width: 100%;
+            margin: auto;
+        }
+    
+        .ipc-wrapper-content {
+            p{
+                font-size: 5rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1599px){
+    
+}

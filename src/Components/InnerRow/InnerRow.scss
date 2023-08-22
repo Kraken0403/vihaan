@@ -1,0 +1,148 @@
+@import '../variables.scss';
+
+.ir{
+
+    .ir__one {
+        padding-top: 0px!important;
+    }
+    &__wrapper{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        // padding-top: 13rem;
+        // padding-top: 100px;
+        
+        .ir__row{
+            width: 100%;
+            display: flex;
+            padding-bottom: 120px;
+
+            .ir__col-50{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                &:first-child{
+                    margin-right: 12rem;
+                }
+                .ir__col__head{
+                    // margin: auto;
+                    // padding-top: 6rem;
+                    h1{
+                        font-size:$h2-title;
+                        font-family: MadeMirage;
+                        margin-bottom: 2.5rem;
+                    }
+                }
+
+                .ir__col__para{
+                    
+                    p{
+                        font-size: $p-size2;
+                        text-align: justify;
+                    }
+                }
+
+                .ir__col__image{
+                    width: 90%;
+                    margin: auto;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                       
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .ir__wrapper .ir__row:nth-child(1){
+        flex-direction: column-reverse;
+    }
+
+    .ir__wrapper .ir__row:nth-child(2){
+        flex-direction: column;
+    }
+
+    .ir__wrapper{
+        width: 100%;
+    }
+
+    .ir__wrapper .ir__row{
+        padding-bottom: 25rem;
+    }
+
+    .ir__wrapper .ir__row .ir__col-50{
+        width: 100%;
+    }
+
+    .ir__wrapper .ir__row .ir__col-50 .ir__col__image{
+        width: 100%;
+    }
+
+    .ir__wrapper .ir__row .ir__col-50:first-child{
+        margin-right: 0;
+    }
+
+    .ir__wrapper .ir__row .ir__col-50 .ir__col__head h1{
+        font-size: 18rem;
+        margin-bottom: 6rem;
+    }
+
+    .ir__wrapper .ir__row .ir__col-50 .ir__col__para p{
+        font-size: 6rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .ir__wrapper .ir__row:nth-child(1){
+        flex-direction: column-reverse;
+    }
+
+    .ir__wrapper .ir__row:nth-child(2){
+        flex-direction: column;
+    }
+
+    .ir__wrapper{
+        width: 100%;
+    }
+
+    .ir__wrapper .ir__row{
+        padding-bottom: 25rem;
+    }
+
+    .ir__wrapper .ir__row .ir__col-50{
+        width: 100%;
+    }
+
+    .ir__wrapper .ir__row .ir__col-50 .ir__col__image{
+        width: 100%;
+    }
+
+    .ir__wrapper .ir__row .ir__col-50:first-child{
+        margin-right: 0;
+    }
+
+    .ir__wrapper .ir__row .ir__col-50 .ir__col__head h1{
+        font-size: 14rem;
+        margin-bottom: 4rem;
+    }
+
+    .ir__wrapper .ir__row .ir__col-50 .ir__col__para p{
+        font-size: 5rem;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1599px){
+    
+}

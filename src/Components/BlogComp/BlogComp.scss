@@ -1,0 +1,58 @@
+@import '../variables.scss';
+
+.blog__main{
+    .blog__wrapper{
+        border-top: 1px solid $accent ;
+        padding: 6rem 0;
+        .blog__title{
+            h1{
+                font-size: $h3-title;
+            }
+        }
+
+        .blog__date{
+            p{
+                font-size: $p-size1;
+                color: $accent;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .blog__main .blog__wrapper .blog__title h1 {
+        font-size: 7.6rem;
+        margin-bottom: 4rem;
+    }
+
+    .blog__main .blog__wrapper .blog__date p{
+        font-size: 4rem;
+    }
+
+    .blog__main .blog__wrapper{
+        padding: 10rem 0;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .blog__main .blog__wrapper .blog__title h1 {
+        font-size: 7.6rem;
+        margin-bottom: 4rem;
+    }
+
+    .blog__main .blog__wrapper .blog__date p{
+        font-size: 4rem;
+    }
+
+    .blog__main .blog__wrapper{
+        padding: 10rem 0;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1599px){
+    
+}

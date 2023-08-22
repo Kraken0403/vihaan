@@ -1,0 +1,93 @@
+@import '../variables.scss';
+
+.acc{
+    width: "100%";
+    border-bottom: 1px solid $accent;
+    
+    button {
+        width: 100%;
+        background-color: transparent;
+        outline: none;
+        text-align: left;
+        outline: none;
+        border: none;
+        padding: 7px;
+        font-size: $h3-title;
+        color: $accent;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    
+}
+
+.button__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span{
+        width: 30px!important;
+        // height: 30px!important;
+    }
+}
+
+.content{
+    padding: 7px;
+    font-size: $p-size1;
+    color: black;
+}
+
+.arrow__wrapper{
+    width: 30px;
+    img{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .arrow__wrapper{
+        width: 15px;
+        img{
+            width: 100%;
+        }
+    }
+
+    .acc {
+        button {
+            font-size: 8rem;
+        }
+
+        .content {
+            font-size: 6rem;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .arrow__wrapper{
+        width: 25px;
+        img{
+            width: 100%;
+        }
+    }
+
+    .acc {
+        button {
+            font-size: 6rem;
+        }
+
+        .content {
+            font-size: 4rem;
+        }
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1599px){
+    
+}

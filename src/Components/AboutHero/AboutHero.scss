@@ -1,0 +1,112 @@
+@import '../variables.scss';
+
+.ah{
+    background: $accent;
+    width: 100%;
+    height: 100vh;
+    // background-position: 50% 0%;
+    position: relative;
+    overflow: hidden;
+    .ah__wrapper{
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        overflow: hidden;
+        .ah__left, .ah__right{
+            // width: 50%;
+            height: 100%;
+        }
+
+        .ah__left{
+            display: flex;
+            width: 55%;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 0 6rem 0;
+            
+        }
+
+        .ah__right{
+            width: 45%;
+            img{
+                position: absolute;
+                width: 55%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .ah__left .line{
+            color: white;
+            font-family: MadeMirage;
+            font-size: $hmain-title;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .ah .ah__wrapper{
+        flex-direction: column;
+        display: flex;
+    }
+
+    .ah .ah__wrapper .ah__left{
+        width: 100%;
+        text-align: center;
+    }
+
+    .ah .ah__wrapper .ah__left .line{
+        font-size: 25rem;
+    }
+
+    .ah .ah__wrapper .ah__right{
+        width: 100%;
+    }
+
+    .ah .ah__wrapper .ah__right img{
+        width: 100%;
+        height: 50%;
+        left: 0;
+        bottom: 0;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .ah .ah__wrapper{
+        flex-direction: column;
+        display: flex;
+        // margin-top: 60px;
+    }
+
+    .ah .ah__wrapper .ah__left{
+        width: 100%;
+        text-align: center;
+    }
+
+    .ah .ah__wrapper .ah__left .line{
+        font-size: 22rem;
+    }
+
+    .ah .ah__wrapper .ah__right{
+        width: 100%;
+    }
+
+    .ah .ah__wrapper .ah__right img{
+        width: 100%;
+        height: 50%;
+        left: 0;
+        bottom: 0;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    .ah .ah__wrapper .ah__left .line{
+        font-size: 12rem;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1599px){
+    
+}

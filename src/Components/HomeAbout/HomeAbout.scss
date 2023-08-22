@@ -1,0 +1,213 @@
+@import '../variables.scss';
+
+.home-about{
+    padding: 13rem 0 0 0;
+    
+    .home-about__image__wrapper{
+        position: relative;
+        margin-bottom: 10rem;
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0%;
+            width: 20%;
+            top: 50%;
+            height: 1px;
+            transform: translate(0%, -50%);
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            right: 0%;
+            width: 20%;
+            top: 50%;
+            height: 1px;
+            transform: translate(0%, -50%);
+            background: rgba(0, 0, 0, 0.3);
+        }
+    }
+    &__image{
+        position: relative;
+        width: fit-content;
+        margin: 0 auto 6rem auto;
+        height: 80vh;
+
+        // &::before{
+        //     content: "";
+        //     position: absolute;
+        //     width: 100%;
+        //     height: 100%;
+        //     top: -3px;
+        //     left: -20px;
+        //     border: 1px solid rgba(0, 0, 0, 0.3);
+        //     z-index: 1;
+        //     border-radius: 300px 300px 0 0;
+        // }
+        img{
+            position: relative;
+            z-index: 2;
+            border-radius: 300px 300px 0 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__wrapper{
+        &__head{
+            text-align: center;
+            font-family: MadeMirage;
+            font-size: $h1-title;
+            margin-bottom: 6rem;
+
+        }
+
+        &__content{
+            display: flex;
+            justify-content: center;
+            .home-about__text-left{
+                width: 40%;
+                
+                padding: 0 5rem;
+                p{
+                    font-size: $p-size2;
+                }
+            }
+
+            .home-about__text-right{
+                width: 40%;
+                padding: 0 5rem;
+                
+                p{
+                    font-size: $p-size2;
+
+                }
+            }
+        }
+    }
+
+    .home-about__cta{
+        display: flex;
+        justify-content: center;
+        margin-top: 6rem;        
+    }
+}
+
+@media screen and (max-width: 768px){
+    .home-about{
+        padding: 40rem 0;
+    }
+    .home-about__image {
+        width: 100%;
+        img{
+            width: 100%;
+        }
+
+        &::before{
+            width: 104%;
+            height: 104%;
+            left: -2%;
+            top: -2%;
+        }
+    }
+
+    .home-about__wrapper__head{
+        font-size: 18rem;
+    }
+
+    .home-about__wrapper__content{
+        flex-direction: column;
+    }
+
+    .home-about__wrapper__content .home-about__text-left{
+        width: 100%;
+        padding: 0;
+    }
+
+    .home-about__wrapper__content .home-about__text-left p{
+        font-size: 7.6rem;
+    }
+
+    .home-about__wrapper__content .home-about__text-right{
+        margin-top: 16rem ;
+        width: 100%;
+        padding: 0;
+    }
+
+    .home-about__wrapper__content .home-about__text-right p{
+        font-size: 7.6rem;
+    }
+
+    .home-about .home-about__image__wrapper::before {
+        display: none;
+    }
+
+    .home-about .home-about__image__wrapper::after {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .home-about{
+        padding: 15rem 0;
+    }
+    // .home-about__image {
+    //     width: 100%;
+    //     img{
+    //         width: 100%;
+    //     }
+
+    //     &::before{
+    //         width: 104%;
+    //         height: 104%;
+    //         left: -2%;
+    //         top: -2%;
+    //     }
+    // }
+
+    .home-about__wrapper__head{
+        font-size: 14rem;
+    }
+
+    .home-about__wrapper__content{
+        flex-direction: row
+    }
+
+    .home-about__wrapper__content .home-about__text-left{
+        width: 45%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .home-about__wrapper__content .home-about__text-left p{
+        font-size: 4rem;
+    }
+
+    .home-about__wrapper__content .home-about__text-right{
+        // margin-top: 16rem ;
+        width: 45%;
+        padding: 0;
+        margin: 0 auto ;
+    }
+
+    .home-about__wrapper__content .home-about__text-right p{
+        font-size: 4rem;
+    }
+
+    .home-about .home-about__image__wrapper::before {
+        display: none;
+    }
+
+    .home-about .home-about__image__wrapper::after {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1599px){
+    
+}

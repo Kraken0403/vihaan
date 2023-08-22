@@ -1,0 +1,103 @@
+@import '../variables.scss';
+
+.tagbutton{
+    text-transform: capitalize;
+}
+
+.gallery {
+    padding-bottom: 6rem;
+}
+
+.image__box{
+//    width: 100%;
+   height: 300px;
+    margin-bottom: 10px;
+   span{
+    width: 100%!important;
+    height: 100%!important;
+    object-fit: cover!important;
+
+   }
+   img{
+    object-fit: cover!important;
+    width: 100%!important;
+    height: 100%!important;
+   }
+}
+
+.category__list {
+    margin: 0 0 2rem 1rem;
+    button {
+        background-color: transparent!important;
+        border: 0px;
+        font-size: $p-size1;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0 2rem;
+    }
+
+    .active__tag {
+        border-bottom: 2px solid $accent;
+        color: $accent;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .image__box{
+        height: 200px;
+    }
+    .category__list {
+        margin: 0 0 2rem 1rem;
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        button {
+            background-color: transparent!important;
+            border: 0px;
+            font-size: 4rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 0;
+            margin: 0 2rem;
+            line-height: 2.2;
+        }
+    
+        .active__tag {
+            border-bottom: 2px solid $accent;
+            color: $accent;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .category__list {
+        margin: 0 0 2rem 1rem;
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        button {
+            background-color: transparent!important;
+            border: 0px;
+            font-size: 4rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 0;
+            margin: 0 2rem;
+            line-height: 2.2;
+        }
+    
+        .active__tag {
+            border-bottom: 2px solid $accent;
+            color: $accent;
+        }
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1599px){
+    
+}
