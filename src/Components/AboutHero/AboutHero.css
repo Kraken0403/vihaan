@@ -1,0 +1,122 @@
+.ah {
+  background: #50162E;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.ah .ah__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.ah .ah__wrapper .ah__left, .ah .ah__wrapper .ah__right {
+  height: 100%;
+}
+
+.ah .ah__wrapper .ah__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 55%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0 6rem 0;
+}
+
+.ah .ah__wrapper .ah__right {
+  width: 45%;
+}
+
+.ah .ah__wrapper .ah__right img {
+  position: absolute;
+  width: 55%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ah .ah__wrapper .ah__left .line {
+  color: white;
+  font-family: MadeMirage;
+  font-size: 11.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .ah .ah__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .ah .ah__wrapper .ah__left {
+    width: 100%;
+    text-align: center;
+  }
+  .ah .ah__wrapper .ah__left .line {
+    font-size: 25rem;
+  }
+  .ah .ah__wrapper .ah__right {
+    width: 100%;
+  }
+  .ah .ah__wrapper .ah__right img {
+    width: 100%;
+    height: 50%;
+    left: 0;
+    bottom: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .ah .ah__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .ah .ah__wrapper .ah__left {
+    width: 100%;
+    text-align: center;
+  }
+  .ah .ah__wrapper .ah__left .line {
+    font-size: 22rem;
+  }
+  .ah .ah__wrapper .ah__right {
+    width: 100%;
+  }
+  .ah .ah__wrapper .ah__right img {
+    width: 100%;
+    height: 50%;
+    left: 0;
+    bottom: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .ah .ah__wrapper .ah__left .line {
+    font-size: 12rem;
+  }
+}
+/*# sourceMappingURL=AboutHero.css.map */
